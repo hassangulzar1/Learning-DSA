@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    //! FIRST PATTERN
+    //! 1st PATTERN
     // int n;
     // cin >> n;
     // int i = 1;
@@ -20,7 +20,7 @@ int main()
     //     i++;
     // }
 
-    //! SECONT PATTERN
+    //! 2nd PATTERN
     // int n;
     // cin >> n;
     // int i = 1;
@@ -36,7 +36,7 @@ int main()
     //     i++;
     // }
 
-    //! THIRD PATTERN
+    //! 3rd PATTERN
     //     int n;
     //     cin >> n;
     //     int i = 1;
@@ -54,4 +54,20 @@ int main()
     //         cout << endl;
     //         i++;
     //     }
+
+    // ! 4th PATTERN
+    int n;
+    cin >> n;
+    int i = 1;
+    while (i <= n)
+    {
+        int j = 1;
+        while (j <= i)
+        {
+            cout << "*";
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
 }
