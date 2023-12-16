@@ -173,18 +173,87 @@ int main()
     // }
 
     // ! 11th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int j = 1;
+    //     while (j <= n)
+    //     {
+    //         char ch = 'A' + i + j - 2;
+    //         cout << ch;
+    //         j++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 12th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int j = 1;
+    //     char ch = 'A' + i - 1;
+    //     while (j <= i)
+    //     {
+    //         cout << ch;
+    //         j++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 13th PATTERN
+    //     int n;
+    //     cin >> n;
+    //     int i = 1;
+    //     char ch = 'A';
+    //
+    //     while (i <= n)
+    //     {
+    //         int j = 1;
+    //         while (j <= i)
+    //         {
+    //             cout << ch;
+    //             ch++;
+    //             j++;
+    //         }
+    //         cout << endl;
+    //         i++;
+    //     }
+
+    // ! 14th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int j = 1;
+    //     while (j <= i)
+    //     {
+    //         char ch = 'A' + i + j - 2;
+    //         cout << ch;
+    //         j++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 14th PATTERN
     int n;
     cin >> n;
     int i = 1;
-
     while (i <= n)
     {
         int j = 1;
-        char ch = 'A' + i - j;
-        while (j <= n)
+        char ch = 'A' + n - i;
+        while (j <= i)
         {
             cout << ch;
-            ch += 1;
+            ch++;
             j++;
         }
         cout << endl;
