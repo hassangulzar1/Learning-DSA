@@ -56,18 +56,35 @@ int main()
     //     }
 
     // ! 4th PATTERN
-    int n;
-    cin >> n;
-    int i = 1;
-    while (i <= n)
-    {
-        int j = 1;
-        while (j <= i)
-        {
-            cout << "*";
-            j++;
-        }
-        cout << endl;
-        i++;
-    }
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int j = 1;
+    //     while (j <= i)
+    //     {
+    //         cout << "*";
+    //         j++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 5th PATTERN
+    //     int n;
+    //     cin >> n;
+    //     int i = 1;
+    //
+    //     while (i <= n)
+    //     {
+    //         int j = 1;
+    //         while (j <= i)
+    //         {
+    //             cout << i;
+    //             j++;
+    //         }
+    //         cout << endl;
+    //         i++;
+    //     }
 }
