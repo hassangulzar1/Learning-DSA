@@ -242,21 +242,193 @@ int main()
     //     i++;
     // }
 
-    // ! 14th PATTERN
-    int n;
-    cin >> n;
-    int i = 1;
-    while (i <= n)
-    {
-        int j = 1;
-        char ch = 'A' + n - i;
-        while (j <= i)
-        {
-            cout << ch;
-            ch++;
-            j++;
-        }
-        cout << endl;
-        i++;
-    }
+    // ! 15th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int j = 1;
+    //     char ch = 'A' + n - i;
+    //     while (j <= i)
+    //     {
+    //         cout << ch;
+    //         ch++;
+    //         j++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 16th PATTERN
+    //     int n;
+    //     cin >> n;
+    //     int i = 1;
+    //
+    //     while (i <= n)
+    //     {
+    //         int j = 1;
+    //         char ch = 'A' + i - 1;
+    //         while (j <= n)
+    //         {
+    //             cout << ch;
+    //             ch++;
+    //             j++;
+    //         }
+    //         cout << endl;
+    //         i++;
+    //     }
+
+    // ! 17th PATTERN
+    //     int n;
+    //     cin >> n;
+    //     int i = 1;
+    //     while (i <= n)
+    //     {
+    //         int spaces = n - i;
+    //         while (spaces)
+    //         {
+    //             cout << " ";
+    //             spaces--;
+    //         }
+    //
+    //         int j = 1;
+    //         while (j <= i)
+    //         {
+    //             cout << "*";
+    //             j++;
+    //         }
+    //         cout << endl;
+    //         i++;
+    //     }
+
+    // ! 18th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int j = 1;
+    //     while (j <= n - i + 1)
+    //     {
+    //         cout << "*";
+    //         j++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 19th PATTERN
+    //     int n;
+    //     cin >> n;
+    //     int i = 1;
+    //     while (i <= n)
+    //     {
+    //         int j = n - i + 1;
+    //         while (j <= n)
+    //         {
+    //             cout << " ";
+    //             j++;
+    //         }
+    //
+    //         int stars = i - 1;
+    //         while (stars < n)
+    //         {
+    //             cout << "*";
+    //             stars++;
+    //         }
+    //         cout << endl;
+    //         i++;
+    //     }
+
+    // ! 20th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int j = n - i + 1;
+    //     while (j <= n)
+    //     {
+    //         cout << " ";
+    //         j++;
+    //     }
+    //     int num = i - 1;
+    //     while (num < n)
+    //     {
+    //         cout << i;
+    //         num++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 21th PATTERN
+    //     int n;
+    //     cin >> n;
+    //     int i = 1;
+    //     while (i <= n)
+    //     {
+    //         int spaces = n - i;
+    //         while (spaces)
+    //         {
+    //             cout << " ";
+    //             spaces--;
+    //         }
+    //         int j = n - i;
+    //
+    //         while (j < n)
+    //         {
+    //             cout << i;
+    //             j++;
+    //         }
+    //         cout << endl;
+    //         i++;
+    //     }
+
+    // ! 22th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int spaces = n - i + 1;
+    //     while (spaces <= n)
+    //     {
+    //         cout << " ";
+    //         spaces++;
+    //     }
+    //     int num = i;
+    //     while (num <= n)
+    //     {
+    //         cout << num;
+    //         num++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 23th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // int count = 1;
+    // while (i <= n)
+    // {
+    //     int spaces = n - i;
+    //     while (spaces)
+    //     {
+    //         cout << " ";
+    //         spaces--;
+    //     }
+    //     int num = n - i;
+    //     while (num < n)
+    //     {
+    //         cout << count;
+    //         num++;
+    //         count++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
 }
