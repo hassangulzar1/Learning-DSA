@@ -106,17 +106,85 @@ int main()
     //     i++;
     // }
 
-    // ! 6th PATTERN
+    // ! 7th PATTERN
+    //     int n;
+    //     cin >> n;
+    //     int i = 1;
+    //     while (i <= n)
+    //     {
+    //         int j = i;
+    //         while (j < i * 2)
+    //         {
+    //             cout << j;
+    //             j++;
+    //         }
+    //         cout << endl;
+    //         i++;
+    //     }
+
+    // ! 8th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int j = 1;
+    //     while (j <= i)
+    //     {
+    //         cout << i - j + 1;
+    //         j++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 9th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int j = 1;
+    //     while (j <= n)
+    //     {
+    //         char ch = 'A' + i - 1;
+    //         cout << ch;
+    //         j++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 10th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= n)
+    // {
+    //     int j = 1;
+    //     while (j <= n)
+    //     {
+    //         char ch = 'A' + j - 1;
+    //         cout << ch;
+    //         j++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+    // ! 11th PATTERN
     int n;
     cin >> n;
     int i = 1;
 
     while (i <= n)
     {
-        int j = i;
-        while (j < i * 2)
+        int j = 1;
+        char ch = 'A' + i - j;
+        while (j <= n)
         {
-            cout << j;
+            cout << ch;
+            ch += 1;
             j++;
         }
         cout << endl;
