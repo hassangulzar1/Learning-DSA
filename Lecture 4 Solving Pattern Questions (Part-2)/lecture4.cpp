@@ -431,4 +431,39 @@ int main()
     //     cout << endl;
     //     i++;
     // }
+
+    // ! 24th PATTERN
+    // int n;
+    // cin >> n;
+    // int i = 1;
+
+    //     while (i <= n)
+    //     {
+    //         int spaces = n - i;
+    //         while (spaces)
+    //         {
+    //             cout << " ";
+    //             spaces--;
+    //         }
+    //         int j = 1;
+    //         while (j <= i)
+    //         {
+    //             cout << j;
+    //             j++;
+    //         }
+    //
+    //         int tri = i - 1;
+    //         while (tri)
+    //         {
+    //             cout << tri;
+    //             tri--;
+    //         }
+    //         cout << endl;
+    //         i++;
+    //     }
+
+    // ! 25th PATTERN
+    int n;
+    cin >> n;
+    int i = 1;
 }
