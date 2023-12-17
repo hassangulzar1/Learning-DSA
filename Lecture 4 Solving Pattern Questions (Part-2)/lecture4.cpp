@@ -466,4 +466,31 @@ int main()
     int n;
     cin >> n;
     int i = 1;
+
+    while (i <= n)
+    {
+        int j = 1;
+        while (j <= n - i + 1)
+        {
+            cout << j;
+            j++;
+        }
+
+        int stars = 2;
+        while (stars < i * 2)
+        {
+            cout << "*";
+            stars++;
+        }
+
+        int againCount = n - i + 1;
+        while (againCount)
+        {
+            cout << againCount;
+            againCount--;
+        }
+
+        cout << endl;
+        i++;
+    }
 }
