@@ -461,7 +461,7 @@ int main()
         cout << endl;
         i++;
     }
-
+    //
     // ! 25th PATTERN
     int n;
     cin >> n;
