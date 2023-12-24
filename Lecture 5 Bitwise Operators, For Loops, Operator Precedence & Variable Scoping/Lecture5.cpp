@@ -66,7 +66,7 @@ int main()
     //     b = sum;
     // }
 
-    //! Prime Number
+    //! Prime Number with break statement
     //     int n = 7;
     //     bool val = 1;
     //
@@ -87,4 +87,43 @@ int main()
     //     {
     //         cout << "Is a prime number" << endl;
     //     }
+    //! HOme work
+    // for (int i = 0; i <= 5; i--)
+    // {
+    //     cout << i << " ";
+    //     i++;
+    // }
+
+    // for (int i = 0; i <= 15; i += 2)
+    // {
+    //     cout << i << " ";
+    //     if (i & 1)
+    //     {
+    //         continue;
+    //     }
+    //     i++;
+    // }
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     for (int j = i; j <= 5; j++)
+    //     {
+    //         if (i + j == 10)
+    //         {
+    //             break;
+    //         }
+    //         cout << i << " " << j << endl;
+    //     }
+    // }
+
+    //! leetcode first problem
+
+    // int pro = 1;
+    // int sum = 0;
+    // int n = 123;
+    // while (n != 0)
+    // {
+    //     cout << n % 10 << endl;
+    //     n = n / 10;
+    // }
 }
