@@ -1,8 +1,58 @@
 #include <iostream>
 using namespace std;
+//! POWER OF TWO NUMBERS FUNCTION
+// int power()
+// {
+//     int a, b;
+//     cin >> a >> b;
+//
+//     int ans = 1;
+//     for (int i = 1; i <= b; i++)
+//     {
+//         ans *= a;
+//     }
+//     return ans;
+// }
+
+//! EVEN OR ODD  FUNCTION
+// int evenODD(int a)
+// {
+//     if (a & 1)
+//     {
+//         return 0;
+//     }
+//
+//     return 1;
+// }
+
+//! NCR  FUNCTION
+// int factorial(int n)
+// {
+//     int ans = 1;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         ans *= i;
+//     }
+//     return ans;
+// }
+//
+// int nCr(int n, int r)
+// {
+//     int num = factorial(n);
+//     int denom = factorial(r) * factorial(n - r);
+//     return num / denom;
+// }
+
+//! COUNTING FUNTION
+void printCounting(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        cout << i << endl;
+    }
+}
 int main()
 {
-
     //! SWITCH STATEMENT
     //     char ch = 'a';
     //     cout << endl;
@@ -101,4 +151,30 @@ int main()
     //         amount = amount % 1;
     //         cout << "No of 1 Rupee notes required are=" << Rs1 << endl;
     //     }
+
+    //! POWER FUNCTIONS
+    // cout << "Answer: " << power() << endl;
+
+    //! NUMBER IS EVEN OR ODD FUNCTIONS
+    // int a;
+    // cin >> a;
+    // if (evenODD(a))
+    // {
+    //     cout << "Number is even" << endl;
+    // }
+    // else
+    // {
+    //     cout << "Number is Odd" << endl;
+    // }
+
+    //! NCR FUNCTION
+    // int n, r;
+    // cin >> n >> r;
+    // cout << "Answer: " << nCr(n, r) << endl;
+
+    //! Counting Function
+
+    int n;
+    cin >> n;
+    printCounting(n);
 }
