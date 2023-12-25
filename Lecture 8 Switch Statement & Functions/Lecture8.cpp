@@ -44,13 +44,73 @@ using namespace std;
 // }
 
 //! COUNTING FUNTION
-void printCounting(int n)
-{
-    for (int i = 1; i <= n; i++)
-    {
-        cout << i << endl;
-    }
-}
+// void printCounting(int n)
+// {
+//     for (int i = 1; i <= n; i++)
+//     {
+//         cout << i << endl;
+//     }
+// }
+
+//! NUMBER IS PRIME OR NOT
+// bool isPrime(int n)
+// {
+//     for (int i = 2; i < n; i++)
+//     {
+//         if (n % i == 0)
+//         {
+//             return 0;
+//         }
+//     }
+//
+//     return 1;
+// }
+
+//! A . P FUNCTION
+// int ap(int n)
+// {
+//     return ((3 * n) + 7);
+// }
+
+//! HOME WORK QUESTION NO 2
+// int setBits(int a, int b)
+// {
+//     int bitsOfa = 0;
+//     int bitsOfb = 0;
+//     while (a != 0)
+//     {
+//         if (a & 1)
+//         {
+//             bitsOfa++;
+//         }
+//         a = a >> 1;
+//     }
+//     while (b != 0)
+//     {
+//         if (b & 1)
+//         {
+//             bitsOfb++;
+//         }
+//         b = b >> 1;
+//     }
+//
+//     return bitsOfa + bitsOfb;
+// }
+
+// int Fabonacci(int a)
+// {
+//     int x = 0;
+//     int y = 1;
+//
+//     for (int i = 2; i < a; i++)
+//     {
+//         int next = x + y;
+//         x = y;
+//         y = next;
+//     }
+//     return y;
+// }
+
 int main()
 {
     //! SWITCH STATEMENT
@@ -173,8 +233,34 @@ int main()
     // cout << "Answer: " << nCr(n, r) << endl;
 
     //! Counting Function
+    // int n;
+    // cin >> n;
+    // printCounting(n);
 
-    int n;
-    cin >> n;
-    printCounting(n);
+    //! NUMBER IS PRIME OR NOT FUNCION
+    // int n;
+    // cin >> n;
+    // if (isPrime(n))
+    // {
+    //     cout << n << " is a Prime number";
+    // }
+    // else
+    // {
+    //     cout << n << " is not Prime number";
+    // }
+
+    //! HOME WORK QUSTION 1
+    // int n;
+    // cin >> n;
+    // cout << ap(n) << endl;
+
+    //! HOME WORK QUSTION 2
+    // int a, b;
+    // cin >> a >> b;
+    // cout << setBits(a, b) << endl;
+
+    //! HOME WORK QUSTION 3
+    // int n;
+    // cin >> n;
+    // cout << Fabonacci(n) << endl;
 }
