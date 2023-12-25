@@ -23,24 +23,40 @@ int main()
 
     //! decimal to binary -ve numbers
 
-    int n;
-    cin >> n;
-
-    while (n != 0)
-    {
-        cout << n % 10 << endl;
-        n = n >> 1;
-    }
-
-    // int ans = 0;
-    // int i = 0;
-    //     while (n != 0)
+    //     long long int n;
+    //     cin >> n;
+    //     unsigned long long int i = 0, ans = 0;
+    //     if (n < 0)
     //     {
-    //         int bit = n & 1;
-    //         ans = (bit * pow(10, i) + ans);
+    //         n = pow(2, 16) + n;
+    //     }
     //
+    //     while (n)
+    //     {
+    //         int lastBit = n & 1;
+    //         ans = (lastBit * pow(10, i)) + ans;
     //         n = n >> 1;
     //         i++;
     //     }
+    //
     //     cout << ans << endl;
+
+    //! binary to decimal number conversion
+    int n;
+    cin >> n;
+    int i = 0;
+    int ans = 0;
+    while (n != 0)
+    {
+        int digit = n % 10;
+
+        if (digit == 1)
+        {
+            ans += pow(2, i);
+        }
+        n = n / 10;
+        i++;
+    }
+
+    cout << ans << endl;
 }
