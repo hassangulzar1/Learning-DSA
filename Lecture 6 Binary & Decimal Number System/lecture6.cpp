@@ -22,7 +22,6 @@ int main()
     //     cout << answer << endl;
 
     //! decimal to binary -ve numbers
-
     //     long long int n;
     //     cin >> n;
     //     unsigned long long int i = 0, ans = 0;
@@ -42,21 +41,33 @@ int main()
     //     cout << ans << endl;
 
     //! binary to decimal number conversion
+    //     int n;
+    //     cin >> n;
+    //     int i = 0;
+    //     int ans = 0;
+    //     while (n != 0)
+    //     {
+    //         int digit = n % 10;
+    //
+    //         if (digit == 1)
+    //         {
+    //             ans += pow(2, i);
+    //         }
+    //         n = n / 10;
+    //         i++;
+    //     }
+    //
+    //     cout << ans << endl;
+
     int n;
     cin >> n;
-    int i = 0;
     int ans = 0;
     while (n != 0)
     {
         int digit = n % 10;
 
-        if (digit == 1)
-        {
-            ans += pow(2, i);
-        }
+        ans = (ans * 10) + digit;
         n = n / 10;
-        i++;
     }
-
     cout << ans << endl;
 }
