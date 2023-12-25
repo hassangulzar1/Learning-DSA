@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 //! POWER OF TWO NUMBERS FUNCTION
 // int power()
 // {
@@ -97,6 +98,7 @@ using namespace std;
 //     return bitsOfa + bitsOfb;
 // }
 
+//! HOME WORK QUESTION NO 3
 // int Fabonacci(int a)
 // {
 //     int x = 0;
