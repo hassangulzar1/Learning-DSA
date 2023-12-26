@@ -27,7 +27,7 @@ int getMin(int num[], int n) {
 
 int main() {
   int size;
-  size >> size;
+  cin >> size;
 
   int num[100];
 
@@ -38,6 +38,4 @@ int main() {
 
   cout << " Maximum Value is: " << getMax(num, size) << endl;
   cout << " Minimum value is: " << getMin(num, size) << endl;
-
-  return 0;
 }
