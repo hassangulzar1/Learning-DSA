@@ -21,10 +21,10 @@ int main() {
   //   }
 
   //! OPTIMIZE SOLUTION
-  int ans = 0;
-  int arr[5] = {1, 1, 2, 2, 3};
-  for (int i = 0; i < 5; i++) {
-    ans = ans ^ arr[i];
-  }
-  cout << ans << endl;
+  //   int ans = 0;
+  //   int arr[5] = {1, 4, 1, 4, 5};
+  //   for (int i = 0; i < 5; i++) {
+  //     ans = ans ^ arr[i];
+  //   }
+  //   cout << ans << endl;
 }
