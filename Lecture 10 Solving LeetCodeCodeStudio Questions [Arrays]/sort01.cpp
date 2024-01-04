@@ -13,11 +13,11 @@ void sortOne(int arr[], int n) {
   int left = 0, right = n - 1;
 
   while (left < right) {
-    while (arr[left] == 0 && left < right) {
+    if (arr[left] == 0 && left < right) {
       left++;
     }
 
-    while (arr[right] == 1 && left < right) {
+    if (arr[right] == 1 && left < right) {
       right--;
     }
 
