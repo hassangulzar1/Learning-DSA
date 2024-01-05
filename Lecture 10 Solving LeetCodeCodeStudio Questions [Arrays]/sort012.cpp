@@ -13,6 +13,7 @@ void zerOne2(int arr[], int n) {
   int l = 0;
   int r = n - 1;
   int m = 0;
+
   while (m <= r) {
     switch (arr[m]) {
       case 0:
