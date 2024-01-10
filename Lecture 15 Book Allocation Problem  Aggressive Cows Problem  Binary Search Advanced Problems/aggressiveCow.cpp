@@ -12,6 +12,7 @@ bool isPossible(vector<int> &stalls, int k, int mid) {
       if (cowCount == k) {
         return true;
       }
+
       lastPos = stalls[i];
     }
   }
