@@ -13,26 +13,44 @@ public class Q20 {
 
     }
 
+    static boolean cheacking(int[][] mat, int[][] target) {
+
+        boolean yes = true;
+        for (int j = 0; j < mat.length; j++) {
+            for (int i = 0; i < target.length; i++) {
+
+                if (mat[i][j] != target[i][j]) {
+                    yes = false;
+                }
+
+            }
+        }
+
+        if (yes) {
+            return true;
+        }
+
+        return false;
+    }
+
     public static void main(String[] args) {
         int[][] mat = { { 0, 0, 0 }, { 0, 1, 0 }, { 1, 1, 1 } };
         int[][] target = { { 1, 1, 1 }, { 0, 1, 0 }, { 0, 0, 0 } };
 
         int[][] rotatedArr = new int[mat.length][mat[0].length];
 
-        boolean yes = true;
-
         for (int i = 0; i < 4; i++) {
             rotate(rotatedArr, mat);
             mat = rotatedArr;
             rotatedArr = new int[mat.length][mat[0].length];
 
-            for (int j = 0; j < mat.length; j++) {
-                if (mat[j] == target[j]) {
-                    continue;
-                }
+            boolean g = cheacking(mat, target);
+            if (g) {
+
+                System.out.println(g);
             }
         }
 
-        System.out.println(Arrays.toString(mat[2]));
+        System.out.println(Arrays.toString(mat[0]));
     }
 }
