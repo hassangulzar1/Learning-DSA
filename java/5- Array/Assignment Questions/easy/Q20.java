@@ -46,7 +46,6 @@ public class Q20 {
 
             boolean g = cheacking(mat, target);
             if (g) {
-
                 System.out.println(g);
             }
         }
