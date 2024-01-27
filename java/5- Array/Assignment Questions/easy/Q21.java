@@ -18,10 +18,6 @@ public class Q21 {
         // }
 
         // Optimise Solution
-        int s = 0;
-        int e = nums.length - 1;
-
-        int[] ans = new int[2];
 
     }
 }
