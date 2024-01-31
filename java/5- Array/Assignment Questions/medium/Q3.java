@@ -6,10 +6,8 @@ public class Q3 {
 
         int[][] ans = new int[rows * cols][2];
 
-        int forward = 1;
+        int forward = 0;
         int down = 0;
-        int left = 0;
-        int up = 0;
 
         int loop = 8;
         int replace = 0;
@@ -18,14 +16,14 @@ public class Q3 {
             if (rStart < rows && cStart < cols) {
                 int j = 0;
                 System.out.println("forward");
-                System.out.println(cStart);
-                for (int i = 0; i <= forward; i++) {
+                for (int i = 0; i <= forward + 1; i++) {
                     ans[replace][0] = rStart;
-                    ans[replace++][1] = cStart += j;
+                    ans[replace++][1] = cStart++;
                     j++;
                     loop--;
                 }
                 forward = j;
+                cStart--;
                 rStart++;
             }
 
@@ -33,7 +31,7 @@ public class Q3 {
             if (rStart < rows && cStart < cols) {
                 System.out.println("down");
                 int j = 0;
-                for (int i = 0; i < down + 1; i++) {
+                for (int i = 0; i <= down; i++) {
                     ans[replace][0] = rStart;
                     ans[replace++][1] = cStart;
                     loop--;
@@ -44,32 +42,29 @@ public class Q3 {
             // ! Leftwording
             if (rStart < rows && cStart < cols) {
                 System.out.println("left");
-                int j = 0;
-                for (int i = 0; i < forward; i++) {
+                for (int i = 0; i <= forward; i++) {
                     ans[replace][0] = rStart;
-                    ans[replace++][1] = cStart--;
+                    ans[replace++][1] = --cStart;
                     loop--;
-                    j++;
                 }
-                down = j;
+                cStart++;
                 rStart--;
             }
-
             // ! upwarding
             if (rStart < rows && cStart < cols) {
                 System.out.println("up");
-                int j = 0;
                 for (int i = 0; i < down; i++) {
-                    ans[replace][0] = rStart -= i;
+                    ans[replace][0] = --rStart;
                     ans[replace++][1] = cStart;
                     loop--;
-                    j++;
                 }
-                up = j;
+                rStart++;
+                cStart++;
+
             }
 
         }
 
-        System.out.println(Arrays.toString(ans[7]));
+        System.out.println(Arrays.toString(ans[5]));
     }
 }
