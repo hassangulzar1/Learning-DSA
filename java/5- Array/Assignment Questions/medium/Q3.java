@@ -1,70 +1,37 @@
-import java.util.Arrays;
+class solution {
+    int index = 1;
+    int row;
+    int col;
+    int rows;
+    int cols;
 
-public class Q3 {
-    public static void main(String[] args) {
-        int rows = 5, cols = 6, rStart = 1, cStart = 4;
-
-        int[][] ans = new int[rows * cols][2];
-
-        int forward = 0;
-        int down = 0;
-
-        int loop = 8;
-        int replace = 0;
-        while (loop > 0) {
-            // !forwarding
-            if (rStart < rows && cStart < cols) {
-                int j = 0;
-                System.out.println("forward");
-                for (int i = 0; i <= forward + 1; i++) {
-                    ans[replace][0] = rStart;
-                    ans[replace++][1] = cStart++;
-                    j++;
-                    loop--;
-                }
-                forward = j;
-                cStart--;
-                rStart++;
-            }
-
-            // !downwarding
-            if (rStart < rows && cStart < cols) {
-                System.out.println("down");
-                int j = 0;
-                for (int i = 0; i <= down; i++) {
-                    ans[replace][0] = rStart;
-                    ans[replace++][1] = cStart;
-                    loop--;
-                    j++;
-                }
-                down = j;
-            }
-            // ! Leftwording
-            if (rStart < rows && cStart < cols) {
-                System.out.println("left");
-                for (int i = 0; i <= forward; i++) {
-                    ans[replace][0] = rStart;
-                    ans[replace++][1] = --cStart;
-                    loop--;
-                }
-                cStart++;
-                rStart--;
-            }
-            // ! upwarding
-            if (rStart < rows && cStart < cols) {
-                System.out.println("up");
-                for (int i = 0; i < down; i++) {
-                    ans[replace][0] = --rStart;
-                    ans[replace++][1] = cStart;
-                    loop--;
-                }
-                rStart++;
-                cStart++;
-
-            }
-
+    public int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
+        int[][] result = new int[rows * cols][2];
+        int moves = 0;
+        row = rStart;
+        col = cStart;
+        this.rows = rows;
+        this.cols = cols;
+        result[0] = new int[] { rStart, cStart };
+        while (index < result.length) {
+            ++moves;
+            addToResult(result, moves, 1, 0);
+            addToResult(result, moves, 0, 1);
+            ++moves;
+            addToResult(result, moves, -1, 0);
+            addToResult(result, moves, 0, -1);
         }
+        return result;
+    }
 
-        System.out.println(Arrays.toString(ans[5]));
+    public void addToResult(int[][] result, int moves, int horizontal, int vertical) {
+        for (int i = 0; i < moves; ++i) {
+            row += vertical;
+            col += horizontal;
+            if (row < rows && row > -1 && col < cols && col > -1) {
+                result[index] = new int[] { row, col };
+                ++index;
+            }
+        }
     }
 }
