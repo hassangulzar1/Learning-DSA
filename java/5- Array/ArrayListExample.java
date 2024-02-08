@@ -5,7 +5,6 @@ public class ArrayListExample {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>(10);
         Scanner input = new Scanner(System.in);
-
         // list.add(23);
         // list.add(34);
         // list.add(34);
