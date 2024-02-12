@@ -13,7 +13,6 @@ public class Q28 {
                 odd++;
             }
         }
-
         System.out.println(Math.max(even, odd));
     }
 }
