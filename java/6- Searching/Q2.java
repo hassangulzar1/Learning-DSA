@@ -1,5 +1,5 @@
-public class Q1 {
-    static int ceiling(int[] arr, int target) {
+public class Q2 {
+    static int floor(int[] arr, int target) {
 
         int s = 0;
         int e = arr.length - 1;
@@ -16,13 +16,14 @@ public class Q1 {
             }
         }
 
-        return s;
+        return e;
     }
 
     public static void main(String[] args) {
         int[] arr = { 2, 3, 3, 9, 14, 16, 18 };
-        int target = 4;
+        int target = 1;
 
-        System.out.println(ceiling(arr, target));
+        System.out.println(floor(arr, target));
     }
+
 }
