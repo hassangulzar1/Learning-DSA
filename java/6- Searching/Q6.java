@@ -15,7 +15,6 @@ public class Q6 {
                 e = mid;
             }
         }
-
         System.out.println(s);
     }
 }
