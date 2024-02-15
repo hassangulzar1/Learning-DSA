@@ -13,10 +13,17 @@ public class Q9 {
                 return mid - 1;
             }
 
-            if (arr[mid] <= arr[s]) {
-                e = mid - 1;
-            } else {
-                s = mid + 1;
+            if (arr[s] == arr[mid] && arr[e] == arr[mid]) {
+                // skip the duplicates
+                if (arr[s] > arr[s + 1]) {
+                    return s;
+                }
+                s++;
+
+                if (arr[e] < arr[e - 1]) {
+                    return e - 1;
+                }
+                e--;
             }
 
         }
