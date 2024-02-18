@@ -14,7 +14,7 @@ public class Q9 {
             }
 
             if (arr[s] == arr[mid] && arr[e] == arr[mid]) {
-                // skip the duplicates
+                // ! skip the duplicates
                 if (arr[s] > arr[s + 1]) {
                     return s;
                 }
@@ -24,6 +24,10 @@ public class Q9 {
                     return e - 1;
                 }
                 e--;
+            } else if (arr[s] < arr[mid] || (arr[s] == arr[mid] && arr[e] < arr[mid])) {
+                s = mid + 1;
+            } else {
+                e = mid - 1;
             }
 
         }

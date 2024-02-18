@@ -5,7 +5,7 @@ public class Q14 {
         int m = 2;
         int n = 3;
         int[][] indices = { { 0, 1 }, { 1, 1 } };
-
+        //
         // int[][] arr = new int[m][n];
         // int countOdd = 0;
         // for (int i = 0; i < indices.length; i++) {
