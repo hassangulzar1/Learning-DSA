@@ -6,8 +6,8 @@ public class Q9 {
         int[] nums = { 0, 1, 2, 3, 4 };
         int[] index = { 0, 1, 2, 2, 1 };
         ArrayList<Integer> list = new ArrayList<>(nums.length);
-        int[] ans = new int[nums.length];
 
+        int[] ans = new int[nums.length];
         for (int i = 0; i < ans.length; i++) {
             list.add(index[i], nums[i]);
         }

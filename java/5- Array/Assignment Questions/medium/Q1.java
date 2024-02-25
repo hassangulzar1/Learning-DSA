@@ -16,7 +16,6 @@ public class Q1 {
         while (startRow <= endRow && firstCol <= lastCol) {
             for (int i = startRow; i <= lastCol; i++) {
                 ans.add(matrix[startRow][i]);
-
             }
             startRow++;
 

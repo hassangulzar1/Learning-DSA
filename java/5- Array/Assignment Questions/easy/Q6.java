@@ -14,6 +14,7 @@ public class Q6 {
                 highestVal = candies[i];
             }
         }
+
         for (int j = 0; j < candies.length; j++) {
             if (candies[j] + extraCandies >= highestVal) {
                 ans.add(true);

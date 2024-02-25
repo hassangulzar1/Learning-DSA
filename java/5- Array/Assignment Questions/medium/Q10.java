@@ -14,5 +14,6 @@ public class Q10 {
         }
 
         System.out.println(Math.max(rob, noRob));
+
     }
 }

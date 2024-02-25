@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Q26 {
     public static void main(String[] args) {
-        int[] digits = { 9 };
+        int[] digits = { 4 };
         // ! BruteForce Solution
         // List<Integer> list = new ArrayList<>();
         //
@@ -36,13 +36,16 @@ public class Q26 {
             if (digits[i] < 9) {
                 digits[i]++;
                 // return digits;
+            } else {
+                digits[i] = 0;
             }
-            digits[i] = 0;
+
         }
 
         digits = new int[digits.length + 1];
-
         digits[0] = 1;
+
+        System.out.println(Arrays.toString(digits));
         // return digits;
 
     }

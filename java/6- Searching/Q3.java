@@ -17,7 +17,6 @@ public class Q3 {
             }
 
         }
-
         System.out.println(s % letters.length);
         // return s % letters.length;
 

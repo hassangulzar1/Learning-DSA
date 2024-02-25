@@ -15,7 +15,6 @@ public class Q2 {
                 return mid;
             }
         }
-
         return e;
     }
 

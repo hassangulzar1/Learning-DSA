@@ -3,7 +3,6 @@ public class Q4 {
         int s = 0;
         int e = arr.length - 1;
         int possible = -1;
-
         while (s <= e) {
             int mid = s + (e - s) / 2;
 

@@ -19,24 +19,23 @@ public class Q11 {
         String ruleValue = "silver";
 
         // ! BruteForce Solution
-        // int count = 0;
-        // for (int i = 0; i < items.size(); i++) {
-        // List<String> temp = items.get(i);
-        //
-        // if ("type".equals(ruleKey)) {
-        // count += temp.get(0).equals(ruleValue) ? 1 : 0;
-        // }
-        // if ("color".equals(ruleKey)) {
-        // count += temp.get(1).equals(ruleValue) ? 1 : 0;
-        // }
-        // if ("name".equals(ruleKey)) {
-        // count += temp.get(2).equals(ruleValue) ? 1 : 0;
-        // }
-        // }
-        // System.out.println(count);
+        int count = 0;
+        for (int i = 0; i < items.size(); i++) {
+            List<String> temp = items.get(i);
+
+            if ("type".equals(ruleKey)) {
+                count += temp.get(0).equals(ruleValue) ? 1 : 0;
+            }
+            if ("color".equals(ruleKey)) {
+                count += temp.get(1).equals(ruleValue) ? 1 : 0;
+            }
+            if ("name".equals(ruleKey)) {
+                count += temp.get(2).equals(ruleValue) ? 1 : 0;
+            }
+        }
+        System.out.println(count);
 
         // ! Optimise Solution
-
         // int count = 0;
         // for (int i = 0; i < items.size(); i++) {
         // if ("type".equals(ruleKey) && items.get(i).get(0).equals(ruleValue))
