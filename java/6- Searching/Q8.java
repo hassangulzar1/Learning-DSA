@@ -44,7 +44,7 @@ public class Q8 {
         int[] nums = { 3, 4, 5, 6, 1, 2 };
         int target = 0;
         int pivot = findPivot(nums);
-        System.out.println(pivot);
+
         int findLeft = binarySearch(nums, target, 0, pivot);
         if (findLeft != -1) {
             // return findLeft;
