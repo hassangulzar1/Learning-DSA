@@ -20,8 +20,7 @@ public class Q5 {
 
         int start = 0;
         int end = 1;
-        // condition
-
+        // ! condition
         while (target > arr[end]) {
             int newStart = end + 1;
             end = end + (end - start + 1) * 2;

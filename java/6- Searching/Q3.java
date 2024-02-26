@@ -15,7 +15,6 @@ public class Q3 {
             } else if (target > letters[mid]) {
                 e = mid - 1;
             }
-
         }
         System.out.println(s % letters.length);
         // return s % letters.length;
