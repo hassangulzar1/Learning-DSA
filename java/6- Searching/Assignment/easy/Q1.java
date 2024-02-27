@@ -3,7 +3,8 @@ public class Q1 {
 
         int x = 2147395599;
         if (x == 0) {
-            return 0;
+            // return 0;
+            System.out.println(0);
         }
 
         int s = 1;
@@ -18,12 +19,14 @@ public class Q1 {
                 s = mid + 1;
 
             } else {
-                return mid;
+                // return mid;
+                System.out.println(mid);
             }
 
         }
 
-        return e;
+        // return e;
+        System.out.println(e);
     }
 
 }
