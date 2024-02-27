@@ -70,13 +70,10 @@ public class Q2 {
         // ! search in 1st half
         if (target <= matrix[rStart][cMid - 1]) {
             return binarySearch(matrix, rStart, 0, cMid - 1, target);
-
         }
         // search in 2nd half
         if (target >= matrix[rStart][cMid + 1] && target <= matrix[rStart][c - 1]) {
-
             return binarySearch(matrix, rStart, cMid + 1, c - 1, target);
-
         }
         // search in 3rd half
         if (target <= matrix[rStart + 1][cMid - 1]) {
@@ -84,6 +81,5 @@ public class Q2 {
         } else {
             return binarySearch(matrix, rStart + 1, cMid + 1, c - 1, target);
         }
-
     }
 }
