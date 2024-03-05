@@ -26,33 +26,54 @@ public class Q12 {
     public static void main(String[] args) {
 
         int[] nums1 = { 4, 9, 5 }, nums2 = { 9, 4, 9, 8, 4 };
-        Arrays.sort(nums2);
-        Arrays.sort(nums1);
-        ArrayList<Integer> temp = new ArrayList<>();
 
-        int i = 0;
-        int j = 0;
-        while (i < nums1.length && j < nums2.length) {
+        // ! Brute Force solution
+        // Arrays.sort(nums2);
+        // Arrays.sort(nums1);
+        // ArrayList<Integer> temp = new ArrayList<>();
+        //
+        // int i = 0;
+        // int j = 0;
+        // while (i < nums1.length && j < nums2.length) {
+        //
+        // if (nums1[i] < nums2[j]) {
+        // i++;
+        // } else if (nums1[i] > nums2[j]) {
+        // j++;
+        // } else {
+        // temp.add(nums1[i]);
+        // i++;
+        // j++;
+        // }
+        // }
+        //
+        // int[] ans = new int[temp.size()];
+        //
+        // for (int k = 0; k < ans.length; k++) {
+        //
+        // ans[k] = temp.get(k);
+        //
+        // }
+        //
+        // System.out.println(ans);
 
-            if (nums1[i] < nums2[j]) {
-                i++;
-            } else if (nums1[i] > nums2[j]) {
-                j++;
-            } else {
-                temp.add(nums1[i]);
-                i++;
-                j++;
+        // ! Optimise solution
+        int[] temp = new int[1001];
+
+        for (int n : nums1) {
+            temp[n]++;
+        }
+
+        int k = 0;
+        for (int i = 0; i < nums2.length; i++) {
+            if (temp[nums2[i]] > 0) {
+                nums1[k++] = nums2[i];
+                temp[nums2[i]]--;
             }
-        }
-
-        int[] ans = new int[temp.size()];
-
-        for (int k = 0; k < ans.length; k++) {
-
-            ans[k] = temp.get(k);
 
         }
 
-        return ans;
+        System.out.println(Arrays.toString(Arrays.copyOfRange(nums1, 0, k)));
+
     }
 }
