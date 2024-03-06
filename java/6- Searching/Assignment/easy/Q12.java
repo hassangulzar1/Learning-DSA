@@ -26,7 +26,6 @@ public class Q12 {
     public static void main(String[] args) {
 
         int[] nums1 = { 4, 9, 5 }, nums2 = { 9, 4, 9, 8, 4 };
-
         // ! Brute Force solution
         // Arrays.sort(nums2);
         // Arrays.sort(nums1);
@@ -70,7 +69,6 @@ public class Q12 {
                 nums1[k++] = nums2[i];
                 temp[nums2[i]]--;
             }
-
         }
 
         System.out.println(Arrays.toString(Arrays.copyOfRange(nums1, 0, k)));
