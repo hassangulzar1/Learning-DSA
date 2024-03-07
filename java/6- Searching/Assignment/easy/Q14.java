@@ -2,36 +2,48 @@ import java.util.Arrays;
 
 public class Q14 {
     public static void main(String[] args) {
-        int[] arr = { -2, 0, 10, -19, 4, 6, -8 };
+        int[] arr = { 7, 15, 3, 4, 30 };
 
-        int multiple[] = new int[arr.length];
+        // ! Brute Force solution
+        // int multiple[] = new int[arr.length];
+        //
+        // for (int i = 0; i < arr.length; i++) {
+        // multiple[i] = arr[i] * 2;
+        // }
+        //
+        // for (int i = 0; i < arr.length; i++) {
+        // for (int j = 0; j < arr.length; j++) {
+        // if (i != j && multiple[i] == arr[j]) {
+        // return true;
+        // }
+        // }
+        // }
+        // return false;
+
+        // ! Binary Search Apporch
+        Arrays.sort(arr);
 
         for (int i = 0; i < arr.length; i++) {
-            multiple[i] = arr[i] * 2;
+
+            int target = arr[i] * 2;
+
+            int s = 0;
+            int e = arr.length - 1;
+
+            while (s <= e) {
+                int mid = s + (e - s) / 2;
+
+                if (arr[mid] == target && mid != i) {
+                    System.out.println(true);
+                    break;
+                } else if (arr[mid] < target) {
+                    s = mid + 1;
+                } else {
+                    e = mid - 1;
+                }
+            }
         }
-
-        int i = 0;
-        int j = 0;
-
-        System.out.println(Arrays.toString(multiple));
-        while (i < arr.length) {
-            if (j == arr.length - 1) {
-                j = 0;
-                i++;
-                continue;
-            }
-
-            if (arr[i] == 0 && arr[j] == 0 && i == j) {
-
-            }
-            if (arr[i] == multiple[j] && i != j) {
-                System.out.println(true);
-                break;
-            } else {
-                j++;
-            }
-
-        }
+        System.out.println(false);
 
     }
 }
