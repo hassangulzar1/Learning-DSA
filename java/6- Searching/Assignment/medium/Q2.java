@@ -8,6 +8,7 @@ public class Q2 {
 
         int length = nums.length - 1;
         while (s < e) {
+
             int mid = s + (e - s) / 2;
             if (nums[mid] != nums[mid + 1] && nums[mid] != nums[mid - 1]) {
                 System.out.println(nums[mid]);
