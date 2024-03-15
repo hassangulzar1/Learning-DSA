@@ -21,11 +21,11 @@ public class Q10 {
             maxi = Math.max(maxi, piles[i]);
         }
 
-        long s = 1;
-        long e = maxi;
+        int s = 1;
+        int e = maxi;
 
         while (s < e) {
-            long mid = s + (e - s) / 2;
+            int mid = s + (e - s) / 2;
             if (check(piles, mid, h)) {
                 e = mid;
             } else {
