@@ -58,12 +58,14 @@ public class Q11 {
         for (int j = 0; j < n; j++) {
             int leftIndex = leftIndex(sortedNums1, nums2[j]) == nums2.length ? leftIndex(sortedNums1, nums2[j]) - 1
                     : leftIndex(sortedNums1, nums2[j]);
+
             int rightIndex = rightIndex(sortedNums1, nums2[j]) < 0 ? 0 : rightIndex(sortedNums1, nums2[j]);
             int newDiff = Math.min(Math.abs(nums2[j] - sortedNums1[leftIndex]),
                     Math.abs(nums2[j] - sortedNums1[rightIndex]));
 
             result = Math.min(result, sum - Math.abs(nums1[j] - nums2[j]) + newDiff);
         }
+
         System.out.println((int) (result % mod));
         // return ;
     }
