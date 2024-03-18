@@ -21,7 +21,6 @@ public class Q643 {
             r++;
         }
 
-        System.out.println(maximum);
         System.out.println((double) maximum / 4);
     }
 }
