@@ -13,7 +13,6 @@ public class BubbleSort {
         int[] arr = { 3, 5, 4, 1, 2 };
 
         for (int i = 0; i < arr.length; i++) {
-
             boolean isSorted = false;
             for (int j = 1; j < arr.length - i; j++) {
                 if (arr[j] < arr[j - 1]) {
