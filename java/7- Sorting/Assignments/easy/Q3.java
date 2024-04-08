@@ -14,6 +14,5 @@ public class Q3 {
             }
         }
         return false;
-
     }
 }
