@@ -8,7 +8,7 @@ public class CyclicSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 5, 4, 3, 2, 1 };
+        int[] arr = { 5, 4, 3, 2, 1, 3 };
         int i = 0;
 
         while (i < arr.length) {
