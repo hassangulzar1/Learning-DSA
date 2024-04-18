@@ -8,9 +8,9 @@ public class Q28 {
 
         for (int i = 0; i < H - N + 1; i++) {
             if (haystack.substring(i, i + N).equals(needle)) {
-                return i;
+                // return i;
             }
         }
-        return -1;
+        // return -1;
     }
 }
