@@ -23,6 +23,6 @@ public class Q49 {
 
         }
 
-        return new ArrayList<>(map.values());
+        // return new ArrayList<>(map.values());
     }
 }
