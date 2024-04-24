@@ -41,6 +41,16 @@
 
 # inbuild String function 
 
-str = "i am a coder."
-print(str.endswith("r"))
-print(str.capitalize())
+# str = "i am a coder."
+# print(str.endswith("r"))
+# print(str.capitalize())
+
+#! Lists and Tuples 
+marks = [1,2,3,4,5]
+marks.append(1)
+print(marks.copy())
+
+# !tuple 
+
+tup = (1,2,3,4)
+print(tup.count(2))
