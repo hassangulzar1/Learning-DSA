@@ -46,11 +46,20 @@
 # print(str.capitalize())
 
 #! Lists and Tuples 
-marks = [1,2,3,4,5]
-marks.append(1)
-print(marks.copy())
+# marks = [1,2,3,4,5]
+# marks.append(1)
+# print(marks.copy())
 
-# !tuple 
+# !tuple  
+# tup = (1,2,3,4)
+# print(tup.count(2))
 
-tup = (1,2,3,4)
-print(tup.count(2))
+# ! Dictionary
+
+info = {
+    "key":"value",
+    "name":"Hassan",
+    "array": [1,2,3],
+    "tupple" : ("dict","set"),
+    
+}
