@@ -4,9 +4,9 @@ import java.util.List;
 public class Q412 {
 
     public static void main(String[] args) {
-        List<String> myList = new ArrayList<>();
-
         int n = 4;
+        
+        List<String> myList = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
             String s = "";
@@ -27,5 +27,8 @@ public class Q412 {
         }
 
         System.out.println(myList);
+
+
+        
     }
 }
