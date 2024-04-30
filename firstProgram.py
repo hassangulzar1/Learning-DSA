@@ -64,8 +64,16 @@
 #     
 # }
 
-# !Loops 
-count = 1
-while count <= 5:
-    print("Hassan")
-    count+=1
+# !while Loops 
+# count = 1
+# while count <= 5:
+#     print("Hassan")
+#     count+=1
+
+
+# ! For loop 
+
+# nums = [1,2,3,4,5]
+# 
+# for val in range(len(nums)):
+#     print(nums[val])
