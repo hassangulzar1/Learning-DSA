@@ -56,10 +56,16 @@
 
 # ! Dictionary
 
-info = {
-    "key":"value",
-    "name":"Hassan",
-    "array": [1,2,3],
-    "tupple" : ("dict","set"),
-    
-}
+# info = {
+#     "key":"value",
+#     "name":"Hassan",
+#     "array": [1,2,3],
+#     "tupple" : ("dict","set"),
+#     
+# }
+
+# !Loops 
+count = 1
+while count <= 5:
+    print("Hassan")
+    count+=1
