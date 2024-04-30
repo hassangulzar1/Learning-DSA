@@ -77,3 +77,21 @@
 # 
 # for val in range(len(nums)):
 #     print(nums[val])
+
+#! Functions in python 
+# def inputOrNot(n):
+#     if n % 2 == 0:
+#         return "even"
+#     else:
+#         return "odd"
+# 
+
+# Recusrion     
+
+def show(n):
+    if n == 10:
+        return
+    print(n)
+    show(n+1)
+
+print(show(5))
