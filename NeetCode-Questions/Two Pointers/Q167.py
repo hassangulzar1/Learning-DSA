@@ -13,3 +13,4 @@ while s < e:
         s += 1
     else:
         e -= 1
+        
