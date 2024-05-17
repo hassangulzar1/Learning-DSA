@@ -3,13 +3,6 @@ from collections import deque
 nums = [1,-1]
 k = 1
 
-# if not nums:
-    # return []
-
-# if k == 1:
-#    return nums
-
-
 ans = []
 d = deque()
 
