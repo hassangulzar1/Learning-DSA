@@ -1,7 +1,6 @@
 s = "]"
 
 stack = []
-
 for i in range(len(s)):
     if s[i] == "(":
         stack.append(")")
@@ -11,7 +10,8 @@ for i in range(len(s)):
         stack.append("]")
     else:
         if len(stack) == 0 or stack[-1] != s[i]:
-              return False
+            #   return False
+            print(False)
         else:
             stack.pop()
 print(stack)
