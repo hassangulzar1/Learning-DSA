@@ -6,5 +6,5 @@ for i in s:
         stack.pop()
      else:
         stack.append(i)
-print(stack)
+print("".join(stack))
                 
