@@ -6,7 +6,7 @@ res = []
 def backtracking(openingN,closingN):
       if openingN == closingN == n:
          res.append("".join(stack))
-         return
+         returnp
       if openingN < n:
          stack.append("(")
          backtracking(openingN +1,closingN)
