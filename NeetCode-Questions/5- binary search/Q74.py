@@ -1,5 +1,5 @@
-matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]]
-target = 3
+matrix = [[1]]
+target = 0
 
 
 def findRow(matrix , target):
@@ -14,13 +14,14 @@ def findRow(matrix , target):
         elif matrix[mid][n] < target:
             s = mid + 1
         else:
-            e = mid 
+            e = mid -1
+    return -1
 
 particularArr = findRow(matrix,target)
 
 def binarySearch(arr,target):
     s = 0
-    e = len(matrix) -1
+    e = len(arr) -1
     while s <= e:
         mid = (s + e) // 2 
         if arr[mid] == target:
@@ -30,6 +31,9 @@ def binarySearch(arr,target):
         else:
             e = mid - 1
     return False
+
+if particularArr == -1:
+    print(False)
 
 print( binarySearch(matrix[particularArr],target))
         
