@@ -18,3 +18,19 @@ def findPivot(numsArr):
     return s
 
 print(findPivot(nums))
+
+#! OPTIMISED SOLUTION
+# res = nums[0]
+# s,e = 0 , len(nums) - 1
+# 
+# while s <= e:
+#    if nums[s] < nums[e]:
+#       res = min(res,nums[s])
+#       break
+#    mid = (s+e)//2
+#    res = min(res,nums[mid])
+#    if nums[mid] >= nums[s]:
+#       s = mid + 1
+#    else:
+#       e = mid - 1
+#    return res
