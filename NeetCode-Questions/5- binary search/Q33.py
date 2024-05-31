@@ -29,15 +29,13 @@ def binarSearch(numsArr,tar,s,e):
             e = mid -1
     return -1
 
-print(findPivot(nums))
 
-# if nums[0] < nums[len(nums) - 1]:
-#     print(binarSearch(nums,target,0,len(nums) -1))
-#                         
-# pivot = findPivot(nums)
-# 
-# ans = binarSearch(nums,target,0,pivot)
-# if ans == -1:
-#     print(binarSearch(nums,target,pivot + 1, len(nums) - 1))
+if nums[0] < nums[len(nums) - 1]:
+    print(binarSearch(nums,target,0,len(nums) -1))
+pivot = findPivot(nums)
+
+ans = binarSearch(nums,target,0,pivot)
+if ans == -1:
+ print(binarSearch(nums,target,pivot + 1, len(nums) - 1))
 
 
