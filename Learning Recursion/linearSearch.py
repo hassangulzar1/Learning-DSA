@@ -1,13 +1,17 @@
 myArr = [23,3,2,4,3,5,73,34,8,1]
 
-def linearSearch(arr,i,tar):
+myList = []
+
+def linearSearch(arr,i,tar,l):
     if i == len(arr):
-        return False
+        return l
+    
+    if myArr[i] == tar:
+        l.append(i)
     
     
-    
-    return myArr[i] == tar or linearSearch(arr,i+1,tar)
+    return linearSearch(arr,i+1,tar,l)
 
     
 
-print(linearSearch(myArr,0,1))
+print(linearSearch(myArr,0,3,myList))
