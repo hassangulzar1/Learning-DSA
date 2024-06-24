@@ -1,8 +1,8 @@
 myArr = [23,3,2,4,3,5,73,34,8,1]
 
-myList = []
 
-def linearSearch(arr,i,tar,l):
+def linearSearch(arr,i,tar):
+    l = []
     if i == len(arr):
         return l
     
@@ -10,8 +10,11 @@ def linearSearch(arr,i,tar,l):
         l.append(i)
     
     
-    return linearSearch(arr,i+1,tar,l)
+    allBelowAsns =  linearSearch(arr,i+1,tar)
+    l = l + allBelowAsns
+    
+    return l
 
     
 
-print(linearSearch(myArr,0,3,myList))
+print(linearSearch(myArr,0,3))
