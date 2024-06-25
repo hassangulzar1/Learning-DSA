@@ -20,7 +20,7 @@ def BinarySearch(arr,s,e,tar):
     else:
         return BinarySearch(arr,s,mid - 1 , tar)
     
-print(BinarySearch(arr,0,len(arr) - 1,3))
+print(BinarySearch(arr,0,len(arr) - 1,9))
 
 
     
