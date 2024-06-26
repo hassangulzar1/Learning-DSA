@@ -6,4 +6,6 @@ class Solution:
         for i in arr:
             if arr.count(i) == i:
                 array.append(i)
-        return max(array)
+        output = max(array)
+
+        return output
