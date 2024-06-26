@@ -1,11 +1,17 @@
 class Solution:
     def findLucky(self, arr: List[int]) -> int:
-        array=[-1]
-        Set = set(arr)
+        hashMap = {}
 
         for i in arr:
-            if arr.count(i) == i:
-                array.append(i)
+            if i not in hashMap:
+                hashMap[i] = 1
+            else:
+                hashMap[i] +=1
         
+        highest = -1
 
-        return max(array)
+        for key,val in hashMap.items():
+            if key == val and key > highest:
+                highest = key
+                
+        return highest
