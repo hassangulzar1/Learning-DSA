@@ -17,15 +17,14 @@ def removeA(str):
     if str == "":       
         return ""
     
-    ch = str[0]
 
-    if ch == "a":
-       return removeA(str[1:])
+    if str.startswith("apple"):
+       return removeA(str[5:])
     else:
-       return ch + removeA(str[1:])
+       return str[0] + removeA(str[1:])
     
 
-print(removeA("baccdah"))
+print(removeA("myapplebacha"))
 
 
 
