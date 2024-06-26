@@ -18,8 +18,8 @@ def removeA(str):
         return ""
     
 
-    if str.startswith("apple"):
-       return removeA(str[5:])
+    if str.startswith("app") and not str.startswith("apple"):
+       return removeA(str[3:])
     else:
        return str[0] + removeA(str[1:])
     
