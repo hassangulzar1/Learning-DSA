@@ -1,11 +1,28 @@
-def subset(p,up):
+# def subset(p,up):
+#     if up == "":
+#         print(p)
+#         return
+#     
+#     ch = up[0]
+# 
+#     subset(p + ch,up[1:])
+#     subset(p,up[1:])
+# 
+# subset("","abc")
+
+# !Add into Array List 
+
+def arrayList(p,up):
     if up == "":
-        print(p)
-        return
+        list = []
+        list.append(p)
+        return list
     
     ch = up[0]
 
-    subset(p + ch,up[1:])
-    subset(p,up[1:])
+    left = arrayList(p + ch,up[1:])
+    right = arrayList(p,up[1:])
 
-subset("","abc")
+    return left + right
+
+print(arrayList("","abc"))
