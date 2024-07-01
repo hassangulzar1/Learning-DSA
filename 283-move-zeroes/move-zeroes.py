@@ -6,7 +6,9 @@ class Solution:
         s = 0
         for e in range(len(nums)):
             if nums[e] != 0:
-                nums[s],nums[e] = nums[e],nums[s]
+                temp = nums[s]
+                nums[s] = nums[e]
+                nums[e] = temp 
                 s += 1
        
 
