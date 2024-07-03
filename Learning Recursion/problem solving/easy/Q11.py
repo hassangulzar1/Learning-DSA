@@ -14,6 +14,8 @@ def bubbleSort(n,arr):
             arr[i + 1] = temp
             count += 1
     
+    if count == 0:
+        return
     
     bubbleSort(n-1,arr)
 
