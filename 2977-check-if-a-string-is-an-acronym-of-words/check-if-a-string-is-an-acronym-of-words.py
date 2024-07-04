@@ -1,14 +1,14 @@
 class Solution:
     def isAcronym(self, words: List[str], s: str) -> bool:
 
-        count = 0;
-
-        if len(words) != len(s):
+        wordLen = len(words)
+        sLen = len(s)
+        if wordLen!= sLen:
             return False
         
-        for i in range(len(words)):
+        for i in range(wordLen):
             if words[i].startswith(s[i]):
-                count += 1
+                None
             else:
                 return False
 
