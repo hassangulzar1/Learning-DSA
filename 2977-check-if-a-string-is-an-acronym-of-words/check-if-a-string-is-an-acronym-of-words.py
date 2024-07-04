@@ -7,9 +7,7 @@ class Solution:
             return False
         
         for i in range(wordLen):
-            if words[i].startswith(s[i]):
-                None
-            else:
+            if not words[i].startswith(s[i]):
                 return False
 
             
