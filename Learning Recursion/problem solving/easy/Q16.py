@@ -5,7 +5,6 @@ def sumOfNum(n):
         return n
     
     
-    
     return n + sumOfNum(n - 1)
 
 
