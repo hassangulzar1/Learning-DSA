@@ -14,9 +14,7 @@
 
 def arrayList(p,up):
     if up == "":
-        list = []
-        list.append(p)
-        return list
+        return [p]
     
     ch = up[0]
 
