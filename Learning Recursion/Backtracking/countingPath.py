@@ -1,8 +1,15 @@
-def count (r,c):
-    if r == 1 or c ==1:
-        return 1
+def count (p,r,c):
+    if r == 1 and c ==1:
+        return [p]
     
-    left = count(r + 1, c)
-    right = count(r, c - 1)
+    localList = []
 
-    return left + right
+    if r > 1:
+      localList.extend(count(p + "D",r - 1, c))
+
+    if c > 1:       
+      localList.extend(count(p + "R",r, c - 1))
+
+    return localList
+
+print(count("",3,3))
