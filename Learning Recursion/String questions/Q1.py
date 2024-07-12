@@ -23,7 +23,7 @@ def removeA(str):
     else:
        return str[0] + removeA(str[1:])
     
-
+  
 print(removeA("myapplebacha"))
 
 

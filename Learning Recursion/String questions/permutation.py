@@ -32,18 +32,18 @@
 # print(permutation("","abc"))
 #! number permutation
 
-def permutation(p,up):
-    if up == "":
-        return 1
-    
-    ch = up[0]
-    count = 0
-    for i in range(len(p) + 1):
-        first = p[:i]
-        second = p[i:]
-
-        count = count + permutation(first + ch + second,up[1:])
-    
-    return count
-
-print(permutation("","abcd"))
+# def permutation(p,up):
+#     if up == "":
+#         return 1
+#     
+#     ch = up[0]
+#     count = 0
+#     for i in range(len(p) + 1):
+#         first = p[:i]
+#         second = p[i:]
+# 
+#         count = count + permutation(first + ch + second,up[1:])
+#     
+#     return count
+# 
+# print(permutation("","abcd"))
