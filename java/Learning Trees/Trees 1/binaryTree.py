@@ -51,41 +51,40 @@ class BinaryTree:
             print(node.value)
         self._pretty_display(node.left, level + 1)
 
+    def pre_order(self):
+        self._pre_order(self.root)
+        print()
+
+    def _pre_order(self, node):
+        if node is None:
+            return
+        print(node.value, end=" ")
+        self._pre_order(node.left)
+        self._pre_order(node.right)
+
+    def in_order(self):
+        self._in_order(self.root)
+        print()
+
+    def _in_order(self, node):
+        if node is None:
+            return
+        self._in_order(node.left)
+        print(node.value, end=" ")
+        self._in_order(node.right)
+
+    def post_order(self):
+        self._post_order(self.root)
+        print()
+
+    def _post_order(self, node):
+        if node is None:
+            return
+        self._post_order(node.left)
+        self._post_order(node.right)
+        print(node.value, end=" ")
 
 tree = BinaryTree()
 tree.populate()
 print("\nPretty display:")
 tree.pretty_display()
-
-#     def pre_order(self):
-#         self._pre_order(self.root)
-#         print()
-# 
-#     def _pre_order(self, node):
-#         if node is None:
-#             return
-#         print(node.value, end=" ")
-#         self._pre_order(node.left)
-#         self._pre_order(node.right)
-# 
-#     def in_order(self):
-#         self._in_order(self.root)
-#         print()
-# 
-#     def _in_order(self, node):
-#         if node is None:
-#             return
-#         self._in_order(node.left)
-#         print(node.value, end=" ")
-#         self._in_order(node.right)
-# 
-#     def post_order(self):
-#         self._post_order(self.root)
-#         print()
-# 
-#     def _post_order(self, node):
-#         if node is None:
-#             return
-#         self._post_order(node.left)
-#         self._post_order(node.right)
-#         print(node.value, end=" ")
