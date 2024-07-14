@@ -50,7 +50,7 @@ class BinaryTree:
         else:
             print(node.value)
         self._pretty_display(node.left, level + 1)
-        
+
 
 tree = BinaryTree()
 tree.populate()
