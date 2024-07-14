@@ -37,6 +37,21 @@ class BST:
         for i in range(len(nums)):
             self.insert(nums[i])
 
+    def populateSorted(self,nums):
+        self.__populateSorted(nums,0,len(nums))
+    
+    def __populateSorted(self,nums,start,end):
+        if start >= end:
+            return
+        
+        mid = (start + end) // 2
+
+        self.insert(nums[mid])
+
+        self.__populateSorted(nums,start,mid)
+        self.__populateSorted(nums,mid + 1, end)
+
+
     
     def balanced(self):
         return self._balanced(self.root)
@@ -58,11 +73,11 @@ class BST:
         self._display(node.left, "Left child of " + str(node.value) + " : ")
         self._display(node.right, "Right child of " + str(node.value) + " : ")
 
-        
+
 
 tree = BST()
-nums = [5,2,7,1,4,6,9,8,3,10]
-tree.populate(nums)
+nums = [1,2,3,4,5,6,7,8,9,10]
+tree.populateSorted(nums)
 
 tree.display()
 
