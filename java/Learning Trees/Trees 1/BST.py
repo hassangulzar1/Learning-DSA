@@ -6,8 +6,6 @@ class BST:
             self.right = None
             self.height = 0
     
-
-    
     def __init__(self) -> None:
         self.root = None
     
