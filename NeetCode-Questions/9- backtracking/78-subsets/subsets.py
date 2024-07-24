@@ -10,7 +10,5 @@ class Solution:
             left = helper(p + temp, up[1:])
             right = helper(p, up[1:])
             return left + right
-    
-    
         return helper([],nums)
         
