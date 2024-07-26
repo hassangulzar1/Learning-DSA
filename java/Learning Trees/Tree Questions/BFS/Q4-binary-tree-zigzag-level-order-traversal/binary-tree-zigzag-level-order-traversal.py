@@ -20,7 +20,7 @@ class Solution:
             levelSize = len(d)
             currLevel = []
 
-            for i in range(len(d)):
+            for i in range(levelSize):
                 if rev:
                     currNode = d.pop()
                     currLevel.append(currNode.val)
@@ -28,8 +28,7 @@ class Solution:
                        d.appendleft(currNode.right)
 
                     if currNode.left:
-                       d.appendleft(currNode.left)
-                
+                       d.appendleft(currNode.left)                
                     
                 else:
                   currNode = d.popleft()

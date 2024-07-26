@@ -18,7 +18,7 @@ class Solution:
         while d:
             levelSize = len(d)
             currLevel = []
-            for i in range(len(d)):
+            for i in range(levelSize):
                 currNode = d.popleft()
                 currLevel.append(currNode.val)
                 if currNode.left:

@@ -16,8 +16,6 @@ class Solution:
         while queue:
             levelSize = len(queue)
             avg = 0
-
-
             for i in range(levelSize):
                 currNode = queue.popleft()
                 avg += currNode.val
