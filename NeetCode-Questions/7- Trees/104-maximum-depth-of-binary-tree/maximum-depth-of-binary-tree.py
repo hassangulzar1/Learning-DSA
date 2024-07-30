@@ -13,9 +13,7 @@ class Solution:
         r = self.maxDepth(root.right)
 
         maxDep = max(l,r)+1
-                
-
-                
+                                
         return maxDep
        
 
