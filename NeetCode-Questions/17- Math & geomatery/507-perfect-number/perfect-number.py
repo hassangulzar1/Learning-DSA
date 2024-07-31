@@ -13,6 +13,8 @@ class Solution:
                 if i != num // i:
                     sum_divesor += num //  i
         
+
+        
         return sum_divesor == num
 
 
