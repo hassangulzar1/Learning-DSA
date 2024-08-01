@@ -44,7 +44,7 @@ class Codec:
     def helper2(self,arr):
         val = arr.pop()
 
-        if val[0] == "n":
+        if val == "null":
             return None
         
         node = TreeNode(int(val))
