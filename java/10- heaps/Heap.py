@@ -52,6 +52,13 @@ class Heap:
         if min != index:
             self.swap(min,index)
             self.downheap(min)
+    def heapSort(self):
+        data = []
+        while self.list:
+            data.append(self.remove())
+
+        return data
+
 
     
     
