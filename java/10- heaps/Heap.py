@@ -29,6 +29,7 @@ class Heap:
         if not self.list:
             raise Exception("Removing from an empty heap!")
         
+        
         temp = self.list[0]
         last = self.list.pop()
         if self.list:
