@@ -3,16 +3,16 @@ class Solution:
         if i == len(nums):
             return [[]]
         
-        res = []
 
         perms = self.helper(i + 1,nums)
+        res = []
 
         for p in perms:
             for j in range(len(p) + 1):
                 pcopy = p.copy()
                 pcopy.insert(j,nums[i])
                 res.append(pcopy)
-                
+
         return res
 
 
