@@ -10,6 +10,7 @@ class Heap:
     def left(self, index):
         return index * 2 + 1
 
+
     def right(self, index):
         return index * 2 + 2
 
