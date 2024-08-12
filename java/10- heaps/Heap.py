@@ -28,8 +28,7 @@ class Heap:
 
     def remove(self):
         if not self.list:
-            raise Exception("Removing from an empty heap!")
-        
+            raise Exception("Removing from an empty heap!")        
         
         temp = self.list[0]
         last = self.list.pop()
