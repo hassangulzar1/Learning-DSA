@@ -1,12 +1,12 @@
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        s = s.rstrip()
         count = 0
-        for char in s:
-            count += 1
-            
+        for char in s[::-1]:
             if char == " ":
-               count = 0
+                if count >= 1:
+                    return count
+            else:
+                count +=1
 
         return count
 
