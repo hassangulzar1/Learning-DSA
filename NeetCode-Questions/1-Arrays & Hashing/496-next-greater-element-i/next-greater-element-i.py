@@ -4,15 +4,17 @@ class Solution:
 
         res = [-1] * len(nums1)
 
+        stack = []
+
         for i in range(len(nums2)):
-            if nums2[i] not in num1Indx:
-                continue
-            
-            for j in range(i+1, len(nums2)):
-                if nums2[j] > nums2[i]:
-                    indx = num1Indx[nums2[i]]
-                    res[indx] = nums2[j]
-                    break
+           curr = nums2[i]
+           while stack and curr > stack[-1]:
+              val = stack.pop()
+              indx = num1Indx[val]
+              res[indx] = curr
+           if curr in num1Indx:
+                stack.append(curr)
+        
 
         return res
         
