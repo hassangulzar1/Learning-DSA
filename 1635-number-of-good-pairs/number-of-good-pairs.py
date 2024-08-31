@@ -2,14 +2,18 @@ class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
         maping = {}
 
-        countingPairs = 0
+        res = 0
 
-        for i in nums:
-            maping[i] = 1 + maping.get(i,0)
-        
-        for i in maping.values():
-            countingPairs += i * (i - 1) // 2
-        return countingPairs
+        for n in nums:
+            if n in maping:
+                res += maping[n]
+                maping[n] += 1
+            else:
+                maping[n] = 1
+        return res
+
+
+
 
         
 
