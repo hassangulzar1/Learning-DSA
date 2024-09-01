@@ -1,14 +1,12 @@
 class Solution:
     def largestGoodInteger(self, num: str) -> str:
-        itr = ["999","888","777","666","555","444","333","222","111","000"]
+        res = "0"
 
-        for n in itr:
-            for s in range(len(num)):
-                sl = num[s:s+3]
-                if sl == n:
-                    return n
-
-        return ""
+        for i in range(len(num) - 2):
+            if num[i] == num[i + 1] == num[i + 2]:
+                res = max(res, num[i: i + 3])
+            
+        return "" if res == "0" else res
 
 
         
