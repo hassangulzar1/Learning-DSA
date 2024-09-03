@@ -9,4 +9,4 @@ class Solution:
             hashMap[nums[i]] = i
         
         return [-1,-1]
-        
+   
