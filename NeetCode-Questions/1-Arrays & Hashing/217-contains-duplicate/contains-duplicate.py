@@ -1,11 +1,12 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        dupimap = {}
+        duplicate = set()
 
-        for num in nums:
-            if num in dupimap:
+        for n in nums:
+            if n in duplicate:
                 return True
-            dupimap[num] = 1
-        
+            duplicate.add(n)
         return False
+        
+            
         
