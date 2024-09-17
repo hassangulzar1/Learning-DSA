@@ -6,7 +6,7 @@ class Solution:
             if(target - nums[i]) in hasMap:
                 return [i,hasMap[target - nums[i]]]
             hasMap[nums[i]] = i
-        return [-1,-1]
+            
 
 
 
