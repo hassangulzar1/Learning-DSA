@@ -24,5 +24,9 @@ class Solution:
                     r -= 1
                     while nums[l] == nums[l - 1] and l < r:
                         l += 1
-                        
+                    while nums[r] == nums[r + 1] and l < r:
+                        r -= 1
         return res
+
+
+testcase = [-2,-2,-2,-1,-1,-1 ,0 ,0 ,0 ,2 ,2 ,2, 2 ]
