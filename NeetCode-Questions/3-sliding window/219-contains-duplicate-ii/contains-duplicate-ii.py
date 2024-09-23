@@ -12,3 +12,4 @@ class Solution:
             window.add(nums[R])
 
         return False
+    
