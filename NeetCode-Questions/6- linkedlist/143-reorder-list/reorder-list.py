@@ -8,6 +8,8 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
+
+        
         slow,fast  = head,head.next
         while fast and fast.next:
             slow = slow.next
@@ -21,6 +23,7 @@ class Solution:
             second.next = prev
             prev = second
             second = temp
+
         #now time to merge two lists
         firstHalf,secondHalf = head,prev
         while secondHalf:
