@@ -18,3 +18,9 @@ class Solution:
 
         return res
         
+
+#       4
+#      / \
+#     3   6
+#    /    / \
+#   2    5   7
