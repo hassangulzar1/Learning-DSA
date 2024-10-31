@@ -10,17 +10,11 @@ class Solution:
 
         def helper(root):
             if not root:
-                return
+                return            
             helper(root.left)
             res.append(root.val)
             helper(root.right)
+
         helper(root)
-
-        return res
         
-
-#       4
-#      / \
-#     3   6
-#    /    / \
-#   2    5   7
+        return res
